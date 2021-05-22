@@ -1,6 +1,21 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import jdcodeIconURL from './jdcode/jdcode.png';
+import jdcodeInsetIconURL from './jdcode/jdcode-small.png';
+import jdcodeConnectionIconURL from './jdcode/jdcode-illustration.png';
+import jdcodeConnectionSmallIconURL from './jdcode/jdcode-small.png';
+
+import jcboardIconURL from './jcboard/jcboard.png';
+import jcboardInsetIconURL from './jcboard/jcboard-small.png';
+import jcboardConnectionIconURL from './jcboard/jcboard-illustration.png';
+import jcboardConnectionSmallIconURL from './jcboard/jcboard-small.png';
+
+import uglybotIconURL from './uglybot/uglybot.png';
+import uglybotInsetIconURL from './uglybot/uglybot-small.png';
+import uglybotConnectionIconURL from './uglybot/uglybot-illustration.png';
+import uglybotConnectionSmallIconURL from './uglybot/uglybot-small.png';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -46,7 +61,98 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+
 export default [
+		{
+        name: 'JDCode',
+        extensionId: 'jdcode',
+        collaborator: 'Junilab Inc.',
+        iconURL: jdcodeIconURL,
+        insetIconURL: jdcodeInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="JDCode Drone with Scratch 3.0"
+                description="Description for the 'jdcode' extension"
+                id="gui.extension.jdcode.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: jdcodeConnectionIconURL,
+        connectionSmallIconURL: jdcodeConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their JDCode."
+                id="gui.extension.jdcode.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.junilab.co.kr/sub/jdkit.php'
+    },
+    {
+        name: 'JCBoard',
+        extensionId: 'jcboard',
+        collaborator: 'Junilab Inc.',
+        iconURL: jcboardIconURL,
+        insetIconURL: jcboardInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="JCBoard with Scratch 3.0"
+                description="Description for the 'jcboard' extension"
+                id="gui.extension.jcboard.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: jcboardConnectionIconURL,
+        connectionSmallIconURL: jcboardConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their JCBoard."
+                id="gui.extension.jcboard.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.junilab.co.kr/sub/jcboard.php'
+    },
+    {
+        name: 'UglyBot',
+        extensionId: 'uglybot',
+        collaborator: 'Junilab Inc.',
+        iconURL: uglybotIconURL,
+        insetIconURL: uglybotInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="UglyBot with Scratch 3.0"
+                description="Description for the 'uglybot' extension"
+                id="gui.extension.uglybot.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: uglybotConnectionIconURL,
+        connectionSmallIconURL: uglybotConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their uglybot."
+                id="gui.extension.uglybot.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.junilab.co.kr/sub/uglybot.php'
+    },
     {
         name: (
             <FormattedMessage
