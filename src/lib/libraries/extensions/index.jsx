@@ -16,6 +16,12 @@ import uglybotInsetIconURL from './uglybot/uglybot-small.png';
 import uglybotConnectionIconURL from './uglybot/uglybot-illustration.png';
 import uglybotConnectionSmallIconURL from './uglybot/uglybot-small.png';
 
+import tm2scratchIconURL from './tm2scratch/tm2scratch.png';
+import tm2scratchInsetIconURL from './tm2scratch/tm2scratch-small.png';
+
+import facemesh2scratchIconURL from './facemesh2scratch/facemesh2scratch.png';
+import facemesh2scratchInsetIconURL from './facemesh2scratch/facemesh2scratch-small.png';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -152,6 +158,42 @@ export default [
             />
         ),
         helpLink: 'http://www.junilab.co.kr/sub/uglybot.php'
+    },
+    {
+        name: 'TM2Scratch',
+        extensionId: 'tm2scratch',
+        collaborator: 'Junilab Inc. and Google',
+        iconURL: tm2scratchIconURL,
+        insetIconURL: tm2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="TM2Scratch with Scratch 3.0"
+                description="Description for the 'TM2Scratch' extension"
+                id="gui.extension.tm2scratchblocks.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+    },
+    {
+        name: 'Facemesh2Scratch',
+        extensionId: 'facemesh2scratch',
+        collaborator: 'Junilab Inc. and Google',
+        iconURL: facemesh2scratchIconURL,
+        insetIconURL: facemesh2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Facemesh2Scratch with Scratch 3.0"
+                description="Description for the 'Facemesh2Scratch' extension"
+                id="gui.extension.facemesh2scratch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
     },
     {
         name: (
