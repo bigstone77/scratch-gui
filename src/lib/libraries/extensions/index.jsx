@@ -22,6 +22,9 @@ import tm2scratchInsetIconURL from './tm2scratch/tm2scratch-small.png';
 import facemesh2scratchIconURL from './facemesh2scratch/facemesh2scratch.png';
 import facemesh2scratchInsetIconURL from './facemesh2scratch/facemesh2scratch-small.png';
 
+import posenet2scratchIconURL from './posenet2scratch/posenet2scratch.png';
+import posenet2scratchInsetIconURL from './posenet2scratch/posenet2scratch-small.png';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -188,6 +191,24 @@ export default [
                 defaultMessage="Facemesh2Scratch with Scratch 3.0"
                 description="Description for the 'Facemesh2Scratch' extension"
                 id="gui.extension.facemesh2scratch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+    },
+    {
+        name: 'Posenet2Scratch',
+        extensionId: 'posenet2scratch',
+        collaborator: 'Junilab Inc. and Google',
+        iconURL: posenet2scratchIconURL,
+        insetIconURL: posenet2scratchInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Posenet2Scratch with Scratch 3.0"
+                description="Description for the 'Posenet2Scratch' extension"
+                id="gui.extension.posenet2scratchblocks.description"
             />
         ),
         featured: true,
