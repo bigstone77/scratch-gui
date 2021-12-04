@@ -77,7 +77,6 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 
 export default [
-		/*
 		{
         name: 'JDCode',
         extensionId: 'jdcode',
@@ -168,8 +167,8 @@ export default [
         ),
         helpLink: 'http://www.junilab.co.kr/sub/uglybot.php'
     },
-    */
-    
+
+    /*
     {
         name: 'Firmtech Drone2',
         extensionId: 'firmtech',
@@ -200,6 +199,7 @@ export default [
         ),
         helpLink: 'http://www.codingkit.co.kr'
     },
+    */
     {
         name: 'TM2Scratch',
         extensionId: 'tm2scratch',
