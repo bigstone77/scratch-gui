@@ -16,6 +16,11 @@ import uglybotInsetIconURL from './uglybot/uglybot-small.png';
 import uglybotConnectionIconURL from './uglybot/uglybot-illustration.png';
 import uglybotConnectionSmallIconURL from './uglybot/uglybot-small.png';
 
+import firmtechIconURL from './firmtech/firmtech.png';
+import firmtechInsetIconURL from './firmtech/firmtech-small.png';
+import firmtechConnectionIconURL from './firmtech/firmtech-illustration.png';
+import firmtechConnectionSmallIconURL from './firmtech/firmtech-small.png';
+
 import tm2scratchIconURL from './tm2scratch/tm2scratch.png';
 import tm2scratchInsetIconURL from './tm2scratch/tm2scratch-small.png';
 
@@ -72,6 +77,7 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 
 export default [
+		/*
 		{
         name: 'JDCode',
         extensionId: 'jdcode',
@@ -161,6 +167,38 @@ export default [
             />
         ),
         helpLink: 'http://www.junilab.co.kr/sub/uglybot.php'
+    },
+    */
+    
+    {
+        name: 'Firmtech Drone2',
+        extensionId: 'firmtech',
+        collaborator: 'www.codingkit.co.kr',
+        iconURL: firmtechIconURL,
+        insetIconURL: firmtechInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Firmtech Drone2 with Scratch 3.0"
+                description="Description for the 'firmtech drone2' extension"
+                id="gui.extension.firmtech.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: firmtechConnectionIconURL,
+        connectionSmallIconURL: firmtechConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their Firmtech Drone2."
+                id="gui.extension.firmtech.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.codingkit.co.kr'
     },
     {
         name: 'TM2Scratch',
