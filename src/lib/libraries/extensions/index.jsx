@@ -21,6 +21,11 @@ import firmtechInsetIconURL from './firmtech/firmtech-small.png';
 import firmtechConnectionIconURL from './firmtech/firmtech-illustration.png';
 import firmtechConnectionSmallIconURL from './firmtech/firmtech-small.png';
 
+import aicobotIconURL from './aicobot/aicobot.png';
+import aicobotInsetIconURL from './aicobot/aicobot-small.png';
+import aicobotConnectionIconURL from './aicobot/aicobot-illustration.png';
+import aicobotConnectionSmallIconURL from './aicobot/aicobot-small.png';
+
 import tm2scratchIconURL from './tm2scratch/tm2scratch.png';
 import tm2scratchInsetIconURL from './tm2scratch/tm2scratch-small.png';
 
@@ -77,6 +82,7 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 
 export default [
+
 		{
         name: 'JDCode',
         extensionId: 'jdcode',
@@ -168,7 +174,7 @@ export default [
         helpLink: 'http://www.junilab.co.kr/sub/uglybot.php'
     },
 
-    /*
+
     {
         name: 'Firmtech Drone2',
         extensionId: 'firmtech',
@@ -199,7 +205,39 @@ export default [
         ),
         helpLink: 'http://www.codingkit.co.kr'
     },
-    */
+    
+    
+    {
+        name: 'AICoBot',
+        extensionId: 'aicobot',
+        collaborator: 'K-EdTech',
+        iconURL: aicobotIconURL,
+        insetIconURL: aicobotInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="AICoBot with Scratch 3.0"
+                description="Description for the 'aicobot' extension"
+                id="gui.extension.aicobot.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: aicobotConnectionIconURL,
+        connectionSmallIconURL: aicobotConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their AICoBot."
+                id="gui.extension.aicobot.connectingMessage"
+            />
+        ),
+        helpLink: 'http://www.k-edtech.co.kr'
+    },
+    
     {
         name: 'TM2Scratch',
         extensionId: 'tm2scratch',
